@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "misterreimaehnstodolist"
+  },
+  "targets": {
+    "misterreimaehnstodolist": {
+      "hosting": {
+        "firebase-todolist-MCmR96": [
+          "misterreimaehnstodolist"
+        ]
+      }
+    }
+  }
+}
