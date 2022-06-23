@@ -5,9 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { provideFirebaseApp, getApp, initializeApp } from '@angular/fire/app';
 import { environment } from 'src/environments/environment';
-import { provideAuth,getAuth  } from '@angular/fire/auth';
-import { provideDatabase, getDatabase} from '@angular/fire/database';
 import { provideFirestore, getFirestore } from '@angular/fire/firestore';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -19,9 +18,9 @@ import { provideFirestore, getFirestore } from '@angular/fire/firestore';
     BrowserModule,
     AppRoutingModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
-    provideAuth(() => getAuth()),
-    provideDatabase(() => getDatabase()),
-    provideFirestore(() => getFirestore())
+    provideFirestore(() => getFirestore()),
+    FormsModule
+
 
   ],
   providers: [],
